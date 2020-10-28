@@ -1,10 +1,10 @@
 import java.util.List;
 
 public class FootballerController {
-    private FootballerServiceInterface footballerServiceInterface = new FootballerService();
+    private FootballerService footballerService = new FootballerService();
 
     public List<String> getNames() {
-        return footballerServiceInterface.getNames();
+        return footballerService.getNames();
     }
 
 }
