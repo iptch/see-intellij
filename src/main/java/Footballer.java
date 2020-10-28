@@ -37,6 +37,10 @@ public class Footballer {
     }
 
     boolean isFullAged() {
-        return getAge() >= 18;
+        return isOlderThan(18);
+    }
+
+    private boolean isOlderThan(int age) {
+        return getAge() >= age;
     }
 }
