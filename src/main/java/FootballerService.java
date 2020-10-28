@@ -20,9 +20,10 @@ public class FootballerService {
     }
 
     public List<String> getNames() {
-        return allFootballers.stream()
+        List<Footballer> listOfFullAgedFootballer = allFootballers.stream()
                 .filter(Footballer::isFullAged)
-                .collect(Collectors.toList())
+                .collect(Collectors.toList());
+        return listOfFullAgedFootballer
                 .stream()
                 .map(this::formatName)
                 .collect(Collectors.toList());
