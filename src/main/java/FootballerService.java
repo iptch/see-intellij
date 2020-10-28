@@ -16,20 +16,16 @@ public class FootballerService {
     }
 
     public List<Footballer> getAllFullAgedFootballer() {
-        return allFootballers.stream().filter(f -> isFullAged(f)).collect(Collectors.toList());
+        return allFootballers.stream().filter(Footballer::isFullAged).collect(Collectors.toList());
     }
 
     public List<String> getNames() {
         return allFootballers.stream()
-                .filter(f -> isFullAged(f))
+                .filter(Footballer::isFullAged)
                 .collect(Collectors.toList())
                 .stream()
                 .map(footballer -> formatName(footballer.getFirstname(), footballer.getLastname()))
                 .collect(Collectors.toList());
-    }
-
-    private boolean isFullAged(Footballer footballer) {
-        return footballer.getAge() >= 18;
     }
 
 }

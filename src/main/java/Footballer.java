@@ -35,4 +35,8 @@ public class Footballer {
     public String getLastname() {
         return lastname;
     }
+
+    boolean isFullAged() {
+        return getAge() >= 18;
+    }
 }
