@@ -15,7 +15,7 @@ public class FootballerService {
         return firstName + " " + lastName;
     }
 
-    public List<Footballer> getAllNotFullAgedFootballer() {
+    public List<Footballer> getAllFullAgedFootballer() {
         return allFootballers.stream().filter(f -> f.getAge() >= 18).collect(Collectors.toList());
     }
 
