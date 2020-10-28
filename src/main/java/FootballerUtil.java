@@ -7,6 +7,4 @@ public class FootballerUtil {
     public static boolean isHealthy(Footballer footballer){
         return footballer.getHealthyStatus().equals("HEALTHY_STATUS");
     }
-
-
 }

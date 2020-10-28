@@ -1,21 +1,22 @@
 public class Footballer {
 
-    private String firstname;
     private String lastname;
+    private String firstname;
     private boolean isBlockedByLaw;
-    private int age;
+    private Integer age;
     private String healthyStatus; // might be HEALTHY_STATUS or NOT_HEALTHY_STATUS
 
-    public Footballer(String firstname, String lastname) {
+    public Footballer(String firstname, String lastname, Integer age) {
         this.firstname = firstname;
         this.lastname = lastname;
+        age = age;
     }
 
     public boolean isBlockedByLaw() {
         return isBlockedByLaw;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
