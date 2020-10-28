@@ -11,8 +11,8 @@ public class FootballerService {
         add(new Footballer("Dark", "Forster", 38));
     }};
 
-    private String formatName(String firstName, String lastName) {
-        return firstName + " " + lastName;
+    private String formatName(Footballer footballer) {
+        return footballer.getFirstname() + " " + footballer.getLastname();
     }
 
     public List<Footballer> getAllFullAgedFootballer() {
@@ -24,7 +24,7 @@ public class FootballerService {
                 .filter(Footballer::isFullAged)
                 .collect(Collectors.toList())
                 .stream()
-                .map(footballer -> formatName(footballer.getFirstname(), footballer.getLastname()))
+                .map(this::formatName)
                 .collect(Collectors.toList());
     }
 
