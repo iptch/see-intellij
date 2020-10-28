@@ -10,7 +10,7 @@ class FootballerServiceTest {
     private FootballerService footballerService = new FootballerService();
 
     @Test
-    //@Disabled
+    @Disabled
     void getNames() {
         List<String> names = footballerService.getNames();
         assertThat(names).hasSize(4);
