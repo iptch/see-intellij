@@ -4,7 +4,7 @@ public class Footballer {
     private String firstname;
     private boolean isBlockedByLaw;
     private Integer age;
-    private String healthyStatus; // might be HEALTHY_STATUS or NOT_HEALTHY_STATUS
+    private String healthyStatus; // might be HEALTHY or NOT_HEALTHY
 
     public Footballer(String firstname, String lastname, Integer age) {
         this.firstname = firstname;
@@ -25,7 +25,7 @@ public class Footballer {
     }
 
     public boolean isInjured() {
-        return !"HEALTHY_STATUS".equals(healthyStatus);
+        return !"HEALTHY".equals(healthyStatus);
     }
 
     public String getFirstname() {
