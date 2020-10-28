@@ -13,6 +13,14 @@ public class Footballer {
         age = age;
     }
 
+    public boolean isHealthy(){
+        return getHealthyStatus().equals(HEALTHY);
+    }
+
+    public boolean canPlay() {
+        return this.isHealthy()  && !isBlockedByLaw();
+    }
+
     public boolean isBlockedByLaw() {
         return isBlockedByLaw;
     }
