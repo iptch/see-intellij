@@ -1,8 +1,8 @@
 public class Footballer {
 
     public static final String HEALTHY = "HEALTHY";
-    private String lastname;
     private String firstname;
+    private String lastname;
     private boolean isBlockedByLaw;
     private Integer age;
     private String healthyStatus; // might be HEALTHY or NOT_HEALTHY
