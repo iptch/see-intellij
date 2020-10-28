@@ -1,5 +1,6 @@
 public class Footballer {
 
+    public static final String HEALTHY = "HEALTHY";
     private String lastname;
     private String firstname;
     private boolean isBlockedByLaw;
@@ -25,7 +26,7 @@ public class Footballer {
     }
 
     public boolean isInjured() {
-        return !"HEALTHY".equals(healthyStatus);
+        return !HEALTHY.equals(healthyStatus);
     }
 
     public String getFirstname() {
