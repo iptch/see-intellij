@@ -10,6 +10,11 @@ class FootballerServiceTest {
     private FootballerService footballerService = new FootballerService();
 
     @Test
+    void thisTestShouldPass() {
+        assertThat(true).isTrue();
+    }
+
+    @Test
     @Disabled
     void getNames() {
         List<String> names = footballerService.getNames();
