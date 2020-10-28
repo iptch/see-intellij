@@ -7,7 +7,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class FootballerServiceTest {
 
-    private FootballerService footballerService = new FootballerService();
+    private FootballerServiceInterface footballerServiceInterface = new FootballerService();
 
     @Test
     void thisTestShouldPass() {
@@ -17,7 +17,7 @@ class FootballerServiceTest {
     @Test
     @Disabled
     void getNames() {
-        List<String> names = footballerService.getNames();
+        List<String> names = footballerServiceInterface.getNames();
         assertThat(names).hasSize(4);
     }
 

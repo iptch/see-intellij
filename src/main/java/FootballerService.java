@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class FootballerService {
+public class FootballerService implements FootballerServiceInterface {
 
     List<Footballer> allFootballers = new ArrayList<Footballer>() {{
         add(new Footballer("Hansi", "Hinterseeeeher", 64));
@@ -19,6 +19,7 @@ public class FootballerService {
         return allFootballers.stream().filter(Footballer::isFullAged).collect(Collectors.toList());
     }
 
+    @Override
     public List<String> getNames() {
         List<Footballer> listOfFullAgedFootballer = allFootballers.stream()
                 .filter(Footballer::isFullAged)
