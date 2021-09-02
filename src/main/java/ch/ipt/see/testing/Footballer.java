@@ -1,3 +1,5 @@
+package ch.ipt.see.testing;
+
 public class Footballer {
 
     private String lastname;

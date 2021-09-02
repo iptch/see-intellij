@@ -1,3 +1,6 @@
+package ch.ipt.see.testing;
+
+import ch.ipt.see.testing.FootballerService;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 

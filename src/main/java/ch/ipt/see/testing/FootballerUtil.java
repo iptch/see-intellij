@@ -1,3 +1,5 @@
+package ch.ipt.see.testing;
+
 public class FootballerUtil {
 
     public static boolean canPlay(Footballer footballer) {

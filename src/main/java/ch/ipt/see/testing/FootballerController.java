@@ -1,3 +1,5 @@
+package ch.ipt.see.testing;
+
 import java.util.List;
 
 public class FootballerController {
